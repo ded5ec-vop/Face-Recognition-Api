@@ -13,14 +13,13 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-  	/*connectionString: process.env.DATABASE_URL,
-  	ssl: {
-  		rejectUnauthorized: false
-  	}*/
-    host : ' postgresql-parallel-52082',
+  	connectionString: process.env.DATABASE_URL,
+  	ssl:true,
+  	
+    /*host : ' postgresql-parallel-52082',
     user : 'postgres',
     password : '0103',
-    database : 'face_rec'
+    database : 'face_rec'*/
   }
 });
 
