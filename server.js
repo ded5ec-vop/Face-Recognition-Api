@@ -59,7 +59,7 @@ app.use(cors());
 }*/
 
 app.get('/', (req,res) => {
-	res.send("It is working");
+	res.send('It is working')
 
 })
 
